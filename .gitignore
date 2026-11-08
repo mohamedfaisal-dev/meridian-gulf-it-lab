@@ -1,0 +1,34 @@
+# ── Secrets & Credentials ─────────────────────────────────────────────────────
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.ppk
+*.ovpn
+credentials*
+secrets*
+*.secret
+
+# ── Virtual Machine & Disk Images ────────────────────────────────────────────
+*.vmdk
+*.vdi
+*.iso
+*.ova
+*.vhd
+*.vhdx
+
+# ── OS Junk ───────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# ── IDE / Editor Folders ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+
+# ── Explicitly NOT ignored ────────────────────────────────────────────────────
+# .gitkeep files are tracked so empty folders appear in the repo.
+# screenshots/ is tracked — do not add it here.
+!.gitkeep
