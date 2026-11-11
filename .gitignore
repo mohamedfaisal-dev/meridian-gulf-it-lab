@@ -24,6 +24,11 @@ Thumbs.db
 *.log
 *.tmp
 
+# ── Executables and installers ────────────────────────────────────────────────
+*.exe
+*.msi
+*.msu
+
 # ── IDE / Editor Folders ──────────────────────────────────────────────────────
 .vscode/
 .idea/
@@ -32,3 +37,4 @@ Thumbs.db
 # .gitkeep files are tracked so empty folders appear in the repo.
 # screenshots/ is tracked — do not add it here.
 !.gitkeep
+
