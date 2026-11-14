@@ -133,7 +133,7 @@ MGT-DC01   Win11   Isolated    Network
 | 0 | Planning: company profile, scope, network planning | ✅ |
 | 1 | VMware environment and MGT-DC01 build | ✅ |
 | 2 | Active Directory DS + DNS | 🟨 |
-| 3 | Directory structure: OUs, users, groups, naming standard | 🔄 |
+| 3 | Directory structure: OUs, users, groups, naming standard | 🟨 |
 | 4 | DHCP, Group Policy, file shares and permissions | 🔄 |
 | 5 | Windows 11 client build and domain join | ⏳ |
 | 6 | GNS3 network layer: VLANs, routing, firewall, DHCP relay | ⏳ |
@@ -182,10 +182,10 @@ MGT-DC01   Win11   Isolated    Network
 </details>
 
 <details>
-<summary><strong>Phase 3: Directory Structure 🔄</strong></summary>
+<summary><strong>Phase 3: Directory Structure 🟨</strong></summary>
 
 - [x] OU structure designed around departments
-- [ ] ~80 user accounts created (bulk import via PowerShell)
+- [x] ~80 user accounts created (bulk import via PowerShell)
 - [x] Security groups and role-based access model
 - [ ] Naming standards documented
 
