@@ -131,10 +131,10 @@ MGT-DC01   Win11   Isolated    Network
 | # | Phase | Status |
 |---|-------|--------|
 | 0 | Planning: company profile, scope, network planning | ✅ |
-| 1 | VMware environment and MGT-DC01 build | 🔄 |
-| 2 | Active Directory DS + DNS | 🔄 |
-| 3 | Directory structure: OUs, users, groups, naming standard | ⏳ |
-| 4 | DHCP, Group Policy, file shares and permissions | ⏳ |
+| 1 | VMware environment and MGT-DC01 build | ✅ |
+| 2 | Active Directory DS + DNS | 🟨 |
+| 3 | Directory structure: OUs, users, groups, naming standard | 🔄 |
+| 4 | DHCP, Group Policy, file shares and permissions | 🔄 |
 | 5 | Windows 11 client build and domain join | ⏳ |
 | 6 | GNS3 network layer: VLANs, routing, firewall, DHCP relay | ⏳ |
 | 7 | Microsoft 365, Entra ID, hybrid identity, Intune | ⏳ |
@@ -158,7 +158,7 @@ MGT-DC01   Win11   Isolated    Network
 </details>
 
 <details>
-<summary><strong>Phase 1: VMware Environment and MGT-DC01 🔄</strong></summary>
+<summary><strong>Phase 1: VMware Environment and MGT-DC01 ✅</strong></summary>
 
 - [x] VMware Workstation installed
 - [x] Windows Server 2025 and Windows 11 ISOs downloaded
@@ -166,35 +166,35 @@ MGT-DC01   Win11   Isolated    Network
 - [x] VMware DHCP disabled on VMnet8 (`10.10.10.0/24`)
 - [x] MGT-DC01 built, renamed, static IP `10.10.10.10`
 - [x] Connectivity to gateway and internet verified
-- [ ] Snapshot baseline taken
+- [x] Snapshot baseline taken
 
 </details>
 
 <details>
-<summary><strong>Phase 2: Active Directory DS + DNS 🔄</strong></summary>
+<summary><strong>Phase 2: Active Directory DS + DNS 🟨</strong></summary>
 
-- [ ] AD DS role installed
-- [ ] MGT-DC01 promoted to a domain controller for `ad.meridiangulf.test`
-- [ ] Health verified (`dcdiag`, SYSVOL/NETLOGON shares, DNS zones)
-- [ ] DNS forwarders and reverse lookup zone configured
-- [ ] Healthy-state snapshot and evidence captured
+- [x] AD DS role installed
+- [x] MGT-DC01 promoted to a domain controller for `ad.meridiangulf.test`
+- [x] Health verified (`dcdiag`, SYSVOL/NETLOGON shares, DNS zones)
+- [x] DNS forwarders and reverse lookup zone configured
+- [x] Healthy-state snapshot and evidence captured
 
 </details>
 
 <details>
-<summary><strong>Phase 3: Directory Structure ⏳</strong></summary>
+<summary><strong>Phase 3: Directory Structure 🔄</strong></summary>
 
-- [ ] OU structure designed around departments
+- [x] OU structure designed around departments
 - [ ] ~80 user accounts created (bulk import via PowerShell)
-- [ ] Security groups and role-based access model
+- [x] Security groups and role-based access model
 - [ ] Naming standards documented
 
 </details>
 
 <details>
-<summary><strong>Phase 4: DHCP, Group Policy, File Shares ⏳</strong></summary>
+<summary><strong>Phase 4: DHCP, Group Policy, File Shares 🔄</strong></summary>
 
-- [ ] DHCP scopes and options
+- [x] DHCP scopes and options
 - [ ] Baseline GPOs (password policy, desktop settings, drive mapping)
 - [ ] Departmental file shares with NTFS permissions
 
